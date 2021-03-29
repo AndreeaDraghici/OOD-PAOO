@@ -13,13 +13,18 @@ public class String {
 		java.lang.String readValue=inputScan.next();
 		
 		FileWriter writer=new FileWriter("Test.txt",true);
-	
+	try{
 		while(!"end".equals(readValue))
 		{
 			writer.write(readValue);
 			readValue=inputScan.nextLine();
 		}
 		writer.close();
+		
+	    }catch(IOException e)
+		{
+		    e.printStackTrace();
+		}
 		
 	}
 
