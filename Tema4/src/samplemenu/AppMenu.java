@@ -54,7 +54,7 @@ public class AppMenu {
 	}
     
     public void addCerc(){
-    	System.out.println("---Adauga Cerc---");
+    	System.out.println("---Adauga informatii cerc---");
     	
 		System.out.print("Ox= ");
 		double Ox = scan.nextDouble();
@@ -69,7 +69,7 @@ public class AppMenu {
 	}
     
     public void addTriunghi(){
-    	System.out.println("---Adauga Triunghi--");
+    	System.out.println("---Adauga informatii triunghi--");
     	
 		System.out.print("Latura 1= ");
 		double l1 = scan.nextDouble();
@@ -84,7 +84,7 @@ public class AppMenu {
 	}
     
     public void addDreptunghi(){
-    	System.out.println("---Adauga Dreptunghi--");
+    	System.out.println("---Adauga informatii dreptunghi--");
     	
 		System.out.print("Lungimea= ");
 		double l= scan.nextDouble();
@@ -96,7 +96,7 @@ public class AppMenu {
 	}
     
     public void addPatrat(){
-    	System.out.println("---Adauga Patrat---");
+    	System.out.println("---Adauga informatii patrat---");
 
     	System.out.print("Latura= ");
 		double lat = scan.nextDouble();
@@ -105,7 +105,7 @@ public class AppMenu {
 	}
     
     public void ModificareCerc(int id){
-    	System.out.println("---Modifica Cerc---");
+    	System.out.println("---Modifica informatii cerc---");
     	
 		System.out.print("Noul Ox= ");
 		double Ox = scan.nextDouble();
@@ -120,7 +120,7 @@ public class AppMenu {
 	}
     
      public void ModificareTriunghi(int id){
-    	 System.out.println("---Modifica Triunghi---");
+    	 System.out.println("---Modifica informatii triunghi---");
     	 
 		System.out.print("Noua Latura1= ");
 		double l1 = scan.nextDouble();
@@ -135,7 +135,7 @@ public class AppMenu {
 	}
      
      public void ModificareDreptunghi(int id){
-    	 System.out.println("---Modifica Dreptunghi---");
+    	 System.out.println("---Modifica informatii dreptunghi---");
     	 
  		System.out.print("Noua Lungime= ");
  		double l= scan.nextDouble();
@@ -146,7 +146,7 @@ public class AppMenu {
  		elementsList.setElement(id,new Dreptunghi(l,h));	
  	}
      public void ModificarePatrat(int id){
-    	 System.out.println("---Modifica Patrat---");
+    	 System.out.println("---Modifica informatii patrat---");
     	 
  		System.out.print("Noua Latura= ");
  		double lat = scan.nextDouble();
