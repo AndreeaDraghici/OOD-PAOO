@@ -14,7 +14,7 @@ public class Patrat implements IGraphicElement{
 	
 	@Override
 	 public void draw() {
-	        System.out.println("Patrat:latura=" + latura);
+	        System.out.println("Patrat:Latura=" + latura);
 	 }
 	
 }
