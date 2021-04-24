@@ -222,7 +222,7 @@ public class AppMenu {
       });       
       menuItems.add(currentItem); 
       
-      currentItem = new MenuItem("Afisare plansa cu forme geometrice", shortCut++, (parameters)->{
+      currentItem = new MenuItem("Vizualizare plansa de lucru", shortCut++, (parameters)->{
     	   	display();
        });       
        menuItems.add(currentItem); 
