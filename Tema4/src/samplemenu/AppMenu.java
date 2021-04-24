@@ -155,7 +155,7 @@ public class AppMenu {
  	}
      
     
- 	private void uiModifyElement() {
+ 	private void uiModificareElement() {
  		System.out.println("Introduceti id-ul: ");
  		try {
  			int id= scan.nextInt();
@@ -218,7 +218,7 @@ public class AppMenu {
       menuItems.add(currentItem); 
       
       currentItem = new MenuItem("Modifica forma", shortCut++, (parameters)->{
-     	   	uiModifyElement();
+     	   	uiModificareElement();
       });       
       menuItems.add(currentItem); 
       
