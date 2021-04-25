@@ -19,7 +19,7 @@ public class Dreptunghi implements IGraphicElement {
 	
 	@Override
     public void draw() {
-        System.out.println("Dreptunghi: Lungime=" + lungimea + ", Latime=" + inaltimea);
+        System.out.println("Dreptunghi: Lungimea=" + lungimea + ", Inaltimea=" + inaltimea);
     }
 	
 }
