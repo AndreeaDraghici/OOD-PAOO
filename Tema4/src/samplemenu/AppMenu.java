@@ -105,7 +105,11 @@ public class AppMenu {
 	}
     
     public void ModificareCerc(int id){
+<<<<<<< HEAD
     	System.out.println("---Modifica inforamtii cerc---");
+=======
+    	System.out.println("---Modifica informatii cerc---");
+>>>>>>> bac735d5d64e4881a29839893a0af028c5e20986
     	
 		System.out.print("Noul Ox= ");
 		double Ox = scan.nextDouble();
@@ -120,7 +124,11 @@ public class AppMenu {
 	}
     
      public void ModificareTriunghi(int id){
+<<<<<<< HEAD
     	System.out.println("---Modifica inforamtii triunghi---");
+=======
+    	 System.out.println("---Modifica informatii triunghi---");
+>>>>>>> bac735d5d64e4881a29839893a0af028c5e20986
     	 
 		System.out.print("Noua Latura1= ");
 		double l1 = scan.nextDouble();
@@ -135,7 +143,11 @@ public class AppMenu {
 	}
      
      public void ModificareDreptunghi(int id){
+<<<<<<< HEAD
     	System.out.println("---Modifica inforamtii dreptunghi---");
+=======
+    	 System.out.println("---Modifica informatii dreptunghi---");
+>>>>>>> bac735d5d64e4881a29839893a0af028c5e20986
     	 
  		System.out.print("Noua Lungime= ");
  		double l= scan.nextDouble();
@@ -146,7 +158,11 @@ public class AppMenu {
  		elementsList.setElement(id,new Dreptunghi(l,h));	
  	}
      public void ModificarePatrat(int id){
+<<<<<<< HEAD
     	System.out.println("---Modifica inforamtii patrat---");
+=======
+    	 System.out.println("---Modifica informatii patrat---");
+>>>>>>> bac735d5d64e4881a29839893a0af028c5e20986
     	 
  		System.out.print("Noua Latura= ");
  		double lat = scan.nextDouble();
@@ -156,7 +172,11 @@ public class AppMenu {
      
     
  	private void uiModificareElement() {
+<<<<<<< HEAD
  		System.out.println("Introduceti id-ul elementului: ");
+=======
+ 		System.out.println("Introduceti id-ul: ");
+>>>>>>> bac735d5d64e4881a29839893a0af028c5e20986
  		try {
  			int id= scan.nextInt();
  			
