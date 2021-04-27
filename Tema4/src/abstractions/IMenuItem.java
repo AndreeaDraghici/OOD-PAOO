@@ -5,5 +5,4 @@ public interface IMenuItem {
     int getShortCut();    
     void render();
     void execute();
-
 }
