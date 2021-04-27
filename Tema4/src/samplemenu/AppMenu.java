@@ -34,6 +34,7 @@ public class AppMenu {
     	System.out.print("\nAdaugare efectuata!\n\n");
 	}
     
+   
 	private void display() {
    		elementsList.draw();
    	}
@@ -51,7 +52,8 @@ public class AppMenu {
 		System.out.print("\nStergere efectuata!\n\n");
 	 }
     
-    public void getCerc(){
+    
+    public void addCerc(){
     	System.out.println("---Adauga informatii cerc---");
     	
 		System.out.print("Ox= ");
@@ -66,7 +68,7 @@ public class AppMenu {
 		elementsList.addElement(new Cerc(Ox, Oy, Raza));
 	}
     
-    public void getTriunghi(){
+    public void addTriunghi(){
     	System.out.println("---Adauga informatii triunghi--");
     	
 		System.out.print("Latura 1= ");
@@ -81,7 +83,7 @@ public class AppMenu {
 		elementsList.addElement(new Triunghi(l1, l2, baza));
 	}
     
-    public void getDreptunghi(){
+    public void addDreptunghi(){
     	System.out.println("---Adauga informatii dreptunghi--");
     	
 		System.out.print("Lungimea= ");
@@ -93,7 +95,7 @@ public class AppMenu {
 		elementsList.addElement(new Dreptunghi(l,h));	
 	}
     
-    public void getPatrat(){
+    public void addPatrat(){
     	System.out.println("---Adauga informatii patrat---");
 
     	System.out.print("Latura= ");
@@ -117,10 +119,11 @@ public class AppMenu {
 		
 		elementsList.setElement(id, new Cerc(Ox, Oy, Raza));
 	}
+    
+     public void ModificareTriunghi(int id){
 
-    public void ModificareTriunghi(int id){
-    	System.out.println("---Modifica informatii triunghi---");
-
+    	 System.out.println("---Modifica informatii triunghi---");
+    	 
 		System.out.print("Noua Latura1= ");
 		double l1 = scan.nextDouble();
 		
@@ -134,8 +137,8 @@ public class AppMenu {
 	}
      
      public void ModificareDreptunghi(int id){
-
-    	System.out.println("---Modifica informatii dreptunghi---");
+	     
+    	  System.out.println("---Modifica informatii dreptunghi---");
     	 
  		System.out.print("Noua Lungime= ");
  		double l= scan.nextDouble();
@@ -146,17 +149,18 @@ public class AppMenu {
  		elementsList.setElement(id,new Dreptunghi(l,h));	
  	}
      public void ModificarePatrat(int id){
-    	 
-    	System.out.println("---Modifica informatii patrat---");
+
+    	 System.out.println("---Modifica informatii patrat---");
     	 
  		System.out.print("Noua Latura= ");
  		double lat = scan.nextDouble();
  		
  		elementsList.setElement(id,new Patrat(lat));
  	}
-  
+     
+    
  	private void uiModificareElement() {
-
+		
  		System.out.println("Introduceti id-ul formei pe care doriti sa o modificati: ");
  		try {
  			int id= scan.nextInt();
@@ -179,13 +183,14 @@ public class AppMenu {
  		System.out.print("\nModificare efectuata!\n\n");
  	}
      
+    
     @SuppressWarnings("unused")
 	public void load() {
-       ArrayList<IMenuItem> menuItems = new ArrayList<IMenuItem>();
- 	   ArrayList<IMenuItem> showElementsOptions = new ArrayList<IMenuItem>();
- 	   ArrayList<IMenuItem> ElementsOptions=new ArrayList<IMenuItem>();
+    	ArrayList<IMenuItem> menuItems = new ArrayList<IMenuItem>();
+ 	    ArrayList<IMenuItem> showElementsOptions = new ArrayList<IMenuItem>();
+ 	    ArrayList<IMenuItem> ElementsOptions=new ArrayList<IMenuItem>();
  	    
- 	   int shortCut = 1;
+ 	    int shortCut = 1;
  	   System.out.print("--- Gestionarea formelor geometrice ---\n\n");
  	    
  	   IMenuItem currentItem = new MenuItem("Adauga forma", shortCut++, (parameters)->{
@@ -197,19 +202,19 @@ public class AppMenu {
       }));
       
       ElementsOptions.add(new MenuItem("1.Adauga cerc", 1, (parameters) -> {
-   	   getCerc();
+   	   addCerc();
       }));
       
       ElementsOptions.add(new MenuItem("2.Adauga triunghi", 2, (parameters) -> {
-   	   getTriunghi();
+   	   addTriunghi();
       }));
       
       ElementsOptions.add(new MenuItem("3.Adauga dreptunghi ", 3, (parameters) -> {
-   	   getDreptunghi();
+   	   addDreptunghi();
       }));
    
       ElementsOptions.add(new MenuItem("4.Adauga patrat ", 4, (parameters) -> {
-   	   getPatrat();
+   	   addPatrat();
       }));
 	    
       currentItem = new MenuItem("Sterge forma", shortCut++, (parameters)->{
@@ -218,12 +223,12 @@ public class AppMenu {
       menuItems.add(currentItem); 
       
       currentItem = new MenuItem("Modifica forma", shortCut++, (parameters)->{
-     	 uiModificareElement();
+     	   	uiModificareElement();
       });       
       menuItems.add(currentItem); 
       
       currentItem = new MenuItem("Vizualizare plansa de lucru", shortCut++, (parameters)->{
-    	  display();
+    	   	display();
        });       
        menuItems.add(currentItem); 
       
