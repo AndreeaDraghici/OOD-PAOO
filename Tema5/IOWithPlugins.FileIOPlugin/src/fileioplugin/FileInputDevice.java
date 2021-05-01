@@ -13,19 +13,19 @@ public class FileInputDevice implements IInputDevice {
 		FileInputStream file = null;
 		String string = "";
 		try {
-	            file = new FileInputStream("input");
-	            @SuppressWarnings("resource")
-				Scanner scanner = new Scanner(file);
-	            string = scanner.nextLine();
+	              file = new FileInputStream("input");
+	              @SuppressWarnings("resource")
+		      Scanner scanner = new Scanner(file);
+	              string = scanner.nextLine();
             
-            }catch(FileNotFoundException e){
+                   }catch(FileNotFoundException e){
         	
-        	 System.out.println("Eroare la deschiderea fisierului " + e.getMessage());
+        	           System.out.println("Eroare la deschiderea fisierului " + e.getMessage());
         	 
-	     	}catch(Exception e){
+	     	   }catch(Exception e){
 			
-	            System.out.println("Eroare procesare fisier " + e.getMessage());
-	            e.printStackTrace();
+	                   System.out.println("Eroare procesare fisier " + e.getMessage());
+	                   e.printStackTrace();
             }
 		if(file != null)
 		{
@@ -33,7 +33,7 @@ public class FileInputDevice implements IInputDevice {
 				
 				file.close();
 				
-			}catch(IOException e){
+			   }catch(IOException e){
 				
 				System.out.println("Fisierul nu este deschis " + e.getMessage());
 			}
