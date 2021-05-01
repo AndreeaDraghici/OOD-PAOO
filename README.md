@@ -8,6 +8,7 @@ Approach:
 In this repository you will find solutions implemented for certain applications / tasks using the notions of OOP and OOD in Java Language.
   
   1. Familiarization with the Java language.
-  2. OOP concepts using design patterns.
+  2. OOP concepts.
   3. Command Pattern.
   4. Composite Pattern.
+  5. Application using Plugins
