@@ -11,4 +11,4 @@ In this repository you will find solutions implemented for certain applications 
   2. OOP concepts.
   3. Command Pattern.
   4. Composite Pattern.
-  5. Application using Plugins
+  5. Application using Plugins.
