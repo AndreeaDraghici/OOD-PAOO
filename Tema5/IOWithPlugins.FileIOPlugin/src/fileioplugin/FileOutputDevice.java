@@ -12,11 +12,11 @@ public class FileOutputDevice implements IOutputDevice{
 		FileOutputStream fileoutput = null;
 		
 		 try {
-	          fileoutput = new FileOutputStream("output");
-	          @SuppressWarnings("resource")
-			  PrintWriter writer = new PrintWriter(fileoutput);
-	          writer.print(s);
-	          writer.flush();
+	                fileoutput = new FileOutputStream("output");
+	                @SuppressWarnings("resource")
+			PrintWriter writer = new PrintWriter(fileoutput);
+	                writer.print(s);
+	                writer.flush();
 	         
 		     }catch(FileNotFoundException e){
 		    	 
@@ -24,9 +24,9 @@ public class FileOutputDevice implements IOutputDevice{
 			   
 		     }catch (Exception e){
 		    	 
-	            System.out.println("Eroare la procesarea fisierului " + e.getMessage());
-	            e.printStackTrace();
-	         }
+	                   System.out.println("Eroare la procesarea fisierului " + e.getMessage());
+	                   e.printStackTrace();
+	             }
 		 
 		 if(fileoutput != null)
 		 {
@@ -34,11 +34,11 @@ public class FileOutputDevice implements IOutputDevice{
 				 
 				  fileoutput.close();
 				 
-			    }catch(IOException e){
+			     }catch(IOException e){
 				 
 				 System.out.println("Fisierul nu este deschis "+e.getMessage());
 			 }
 		 }
-    }
+        }
 }
 
