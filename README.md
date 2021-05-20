@@ -12,3 +12,4 @@ In this repository you will find solutions implemented for certain applications 
   3. Command Pattern.
   4. Composite Pattern.
   5. Application using Plugins.
+  6. Composite Pattern using Plugins.
