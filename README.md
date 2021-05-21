@@ -13,3 +13,6 @@ In this repository you will find solutions implemented for certain applications 
   4. Composite Pattern.
   5. Application using Plugins.
   6. Composite Pattern using Plugins.
+
+
+NOTE:  See the pdf entitled -> README.pdf
